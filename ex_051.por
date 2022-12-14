@@ -3,20 +3,29 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("{ EXERCICIO 051 - Triangulo }\n")
+		escreva("{ EXERCICIO 051 - Piramite }\n")
 
-		inteiro qtd, x, y
-		cadeia estrela = " "
+		inteiro num, c, p, i
+		cadeia piramide = " "
 		
 		escreva("Quantos andares? ")
-		leia (qtd)
-
-		para(x = 1; x <= qtd; x++){
+		leia (num)
+		
+		para(p = 1; p <= num; p++){
+			piramide = piramide + "**"
+			escreva(piramide, "\n")
+		}
+		
+		para(c = num; c > 0; c--){
+			piramide = "**"
+			escreva(piramide, "\n")
 			
-			para(y = 1; y <= 2; y++){								
-			estrela = estrela + "*"	
+			para(i = 2; i > 1; i--){
+				escreva("\n")
+				//escreva(piramide)
+				
 			}
-			escreva(estrela, "\n")
+			
 		}
 	}
 }
@@ -25,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 125; 
+ * @POSICAO-CURSOR = 321; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

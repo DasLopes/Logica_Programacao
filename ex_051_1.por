@@ -3,15 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("{ EXERCICIO 017 - Ano Bissexto} \n")
-		escreva("Digitou um ano qualquer: ")
-		inteiro ano
-		leia (ano)
+		escreva("{ EXERCICIO 051 - Triangulo }\n")
+
+		inteiro qtd, x, y
+		cadeia estrela = " "
 		
-		se(ano % 4 == 0 e ano % 100 != 0 ou ano % 400 == 0){
-			escreva("O ano de " + ano + " é Bissexto")
-		}senao{
-			escreva("O ano de " + ano + " não Bissexto")
+		escreva("Quantos andares? ")
+		leia (qtd)
+
+		para(x = 1; x <= qtd; x++){
+			
+			para(y = 1; y <= 2; y++){								
+			estrela = estrela + "*"	
+			}
+			escreva(estrela, "\n")
 		}
 	}
 }
@@ -20,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 325; 
+ * @POSICAO-CURSOR = 125; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
